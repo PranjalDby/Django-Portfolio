@@ -1,0 +1,11 @@
+# Copyright (c) 2026 Author. All Rights Reserved.
+#
+# ignoring __pycache___
+#
+__pycache__
+*/__pycache__/*
+
+*.sqlite3
+
+*/__pycache__
+**/__pycache__
