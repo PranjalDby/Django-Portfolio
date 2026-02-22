@@ -76,17 +76,8 @@ WSGI_APPLICATION = 'DjangoWebapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':getenv('DATABASE','userdb'),
-        'USER':"app",
-        'PASSWORD':f"{getenv('PASSWORD','#@24Sch92')}",
-        'HOST':"127.0.0.1",
-        'PORT':getenv('PORT'),
-        'OPTIONS':{
-            'pool':True,
-            'server_side_binding':True,
-            'sslmode':"prefer"
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME':f'{BASE_DIR} / db.sqlite3',
     }
 }
 
