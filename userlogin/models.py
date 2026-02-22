@@ -10,7 +10,6 @@ class UserInfo(models.Model):
     # creating a Meta class to tell django that do not overwrite this table it is already created
     class Meta:
         db_table = 'user_info'
-        managed = True
         
         
         
